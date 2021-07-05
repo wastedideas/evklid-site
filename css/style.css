@@ -1,0 +1,134 @@
+html {
+  box-sizing: border-box;
+}
+
+*,
+*::before,
+*::after {
+  box-sizing: inherit;
+}
+
+body {
+  min-width: 320px;
+  margin: 0;
+
+  background-color: #FFFFFF;  /* под проект */
+  font-family: 'Montserrat', sans-serif; /* в "" свой шрифт под проект*/
+  color: #333333;
+  font-size: 16px;
+  font-weight: 400;
+  line-height: 1;
+}
+
+button, input {
+  font: inherit;
+}
+
+img {
+  max-width: 100%;
+  height: auto;
+}
+
+a {
+  text-decoration: none;
+  color: inherit;
+}
+
+ul {
+  list-style: none;
+}
+
+h1, h2, h3, p, ul {
+  padding: 0;
+  margin: 0;
+}
+
+/* container */
+
+.container {
+  max-width: 1770px;  /*под проект*/
+  margin: 0 auto;
+}
+
+.visually-hidden {
+  position: absolute !important;
+  clip: rect(1px 1px 1px 1px); /* IE6, IE7 */
+  clip: rect(1px, 1px, 1px, 1px);
+  padding: 0 !important;
+  border: 0 !important;
+  height: 1px !important;
+  width: 1px !important;
+  overflow: hidden;
+}
+
+/* при работе с float */
+
+.clearfix::after {
+  content: "";
+  display: table;
+  clear: both;
+}
+
+.section-header {
+  font-weight: 400;
+  font-size: 48px;
+  line-height: 59px;
+  color: #333333;
+}
+
+/* Состояние focus для элементов */
+a:focus,
+input:focus,
+textarea:focus,
+button:focus {
+  outline: 2px solid #c2c2c2;
+}
+
+/* Отключение outline для состояния active элементов: */
+a:active ,
+input:active ,
+textarea:active ,
+button:active {
+  outline: none;
+}
+
+@media (max-width: 1800px) {
+  .container {
+    max-width: 1600px;
+  }
+}
+
+@media (max-width: 1650px) {
+  .container {
+    max-width: 1250px;
+  }
+}
+
+@media (max-width: 1300px) {
+  .container {
+    max-width: 1076px;
+  }
+}
+
+@media (max-width: 1140px) {
+  .container {
+    max-width: 924px;
+  }
+}
+
+@media (max-width: 992px) {
+  .container {
+    max-width: 768px;
+  }
+}
+
+@media (max-width: 767px) {
+  .container {
+    max-width: calc(100% - 30px);
+  }
+
+  .section-header {
+    font-size: 24px;
+    line-height: 30px;
+  }
+}

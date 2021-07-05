@@ -1,0 +1,264 @@
+/* How-we-work */
+
+.section-how-we-work {
+  padding: 50px 0 50px 0;
+}
+
+.section_header_section-how-we-work {
+  padding-bottom: 45px;
+}
+
+.section-how-we-work__step-list {
+  display: flex;
+  padding-bottom: 45px;
+}
+
+.section-how-we-work__step-list-item:not(:last-child) {
+  margin-right: 76px;
+}
+
+.section-how-we-work__step-list-link {
+  font-weight: 400;
+  font-size: 18px;
+  line-height: 22px;
+  cursor: pointer;
+  border: none;
+  background-color: inherit;
+  padding: 0;
+  transition: color .3s ease-in-out;
+}
+
+.section-how-we-work__step-list-link:hover {
+  color: #FF9900;
+}
+
+.section-how-we-work__step-list-link:active {
+  color: #E1670E;
+}
+
+.section-how-we-work__step-list-link_active:focus {
+  outline: none;
+}
+
+.section-how-we-work__step-list-link_active {
+  color: #FF9900;
+}
+
+.section-how-we-work__consultation {
+  min-height: 465px;
+  display: none;
+}
+
+.tab-content-active {
+  display: flex;
+}
+
+.section-how-we-work__consultation_one::after {
+  content: '';
+  width: 50%;
+  background-image: url('../image/how-we-work-one.jpg');
+  background-position: bottom;
+  background-repeat: no-repeat;
+  background-size: 100% 465px;
+}
+
+.section-how-we-work__consultation_two::after {
+  content: '';
+  width: 50%;
+  background-image: url('../image/how-we-work-two.jpg');
+  background-position: bottom;
+  background-repeat: no-repeat;
+  background-size: 100% 465px;
+}
+
+.section-how-we-work__consultation_three::after {
+  content: '';
+  width: 50%;
+  background-image: url('../image/how-we-work-three.jpg');
+  background-position: bottom;
+  background-repeat: no-repeat;
+  background-size: 100% 465px;
+}
+
+.section-how-we-work__consultation_four::after {
+  content: '';
+  width: 50%;
+  background-image: url('../image/how-we-work-four.jpg');
+  background-position: bottom;
+  background-repeat: no-repeat;
+  background-size: 100% 465px;
+}
+
+.section-how-we-work__consultation-block {
+  max-height: 475px;
+  max-width: 758px;
+  margin-right: 142px;
+}
+
+.section-how-we-work__consultation-block-header {
+  padding-bottom: 5px;
+  font-weight: 700;
+  font-size: 24px;
+  line-height: 32px;
+}
+
+.section-how-we-work__consultation-block-text {
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 32px;
+  margin-bottom: 60px;
+}
+
+.section-how-we-work__details {
+  display: inline-block;
+  padding: 20px 38px 20px 38px;
+  background: #FF9900;
+  color: #FFFFFF;
+  font-weight: 700;
+  font-size: 16px;
+  line-height: 20px;
+  margin-right: 27px;
+  transition: background .3s ease-in-out;
+}
+
+.section-how-we-work__details:hover {
+  background: rgba(255, 153, 0, 0.6);
+}
+
+.section-how-we-work__details:active {
+  background: #E1670E;
+}
+
+.section-how-we-work__contract {
+  display: inline-block;
+  padding: 20px 38px 16px 38px;
+  border: solid 1px #333333;
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 20px;
+  background: inherit;
+  transition: background .3s ease-in-out, color .3s ease-in-out;
+}
+
+.section-how-we-work__contract:hover {
+  color: #FFFFFF;
+  background: #666666;
+}
+
+.section-how-we-work__contract:active {
+  background: #000000;
+}
+
+@media (max-width: 1800px) {
+  .section-how-we-work__consultation {
+    align-items: inherit;
+  }
+
+  .section-how-we-work__consultation-block {
+    flex: 0 0 calc(50% - 25px);
+    max-height: 100%;
+    margin-right: 50px;
+  }
+
+  .section-how-we-work__consultation::after {
+    margin-left: 50px;
+    background-size: cover;
+  }
+
+  /* .section-how-we-work__consultation-image {
+    flex: 0 0 calc(50% - 25px);
+    min-height: 100%;
+    overflow: hidden;
+  }
+
+  .section-how-we-work__consultation-image img {
+    height: 100%;
+    object-fit: cover;
+  } */
+}
+
+@media (max-width: 992px) {
+  .section-how-we-work {
+    padding: 29px 0 29px 0;
+  }
+
+  .container_section-how-we-work {
+    max-width: 668px;
+  }
+
+  .section-how-we-work__step-list {
+    justify-content: space-between;
+  }
+
+  .section-how-we-work__consultation {
+    flex-direction: column;
+  }
+
+  /* .section-how-we-work__consultation-image {
+    order: 0;
+    max-height: 284px;
+    margin-bottom: 38px;
+  } */
+
+  .section-how-we-work__consultation::after {
+    width: 100%;
+    order: 0;
+    min-height: 284px;
+    margin-bottom: 38px;
+    margin-left: 0;
+  }
+
+  .section-how-we-work__consultation-block {
+    order: 1;
+    margin-right: 0;
+  }
+}
+
+@media (max-width: 767px) {
+  .section-how-we-work {
+    padding: 19.5px 0 19.5px 0;
+  }
+
+  .container_section-how-we-work {
+    max-width: calc(100% - 30px);
+  }
+
+  .section-how-we-work__step-list-item:not(:last-child) {
+    margin-right: 44px;
+  }
+
+  .section-how-we-work__step-list-link {
+    font-size: 14px;
+    line-height: 17px;
+  }
+
+  .section_header_section-how-we-work {
+    padding-bottom: 29px;
+  }
+
+  .section-how-we-work__consultation-block-header {
+    font-weight: 500;
+    font-size: 18px;
+    line-height: 32px;
+  }
+
+  .section-how-we-work__consultation-block-text {
+    font-weight: 400;
+    font-size: 14px;
+    line-height: 28px;
+    margin-bottom: 30px;
+  }
+
+  .section-how-we-work__details {
+    font-size: 12px;
+    line-height: 15px;
+    padding: 13px 29px 15px 29px;
+    margin-right: 10px;
+  }
+
+  .section-how-we-work__contract {
+    font-size: 12px;
+    line-height: 15px;
+    padding: 11px 29px 14px 29px;
+  }
+}

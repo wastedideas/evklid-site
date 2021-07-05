@@ -1,0 +1,318 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Евклид - Проектные решения</title>
+  <!-- Подключение и настройка аккордеона: -->
+  <script src="https://code.jquery.com/jquery-1.12.4.js"></script>
+  <script src="https://code.jquery.com/ui/1.12.1/jquery-ui.js"></script>
+  <script>
+  $( function() {
+    $( "#accordion" ).accordion({
+      collapsible: true,
+      active: false,
+      icons: false,
+      heightStyle: "content",
+    });
+  } );
+  </script>
+  <!-- Подключение слайдера: -->
+  <link rel="stylesheet" href="https://unpkg.com/swiper/swiper-bundle.min.css" />
+  <script src="https://unpkg.com/swiper/swiper-bundle.min.js"></script>
+
+  <link rel="shortcut icon" href="image/favicon.ico" type="image/x-icon"/>
+  <link rel="stylesheet" href="css/normalize.css">
+  <link rel="stylesheet" href="css/style.css">
+  <link rel="stylesheet" href="css/fonts.css">
+  <link rel="stylesheet" href="css/header.css">
+  <link rel="stylesheet" href="css/hero.css">
+  <link rel="stylesheet" href="css/about-us.css">
+  <link rel="stylesheet" href="css/how-we-work.css">
+  <link rel="stylesheet" href="css/faq.css">
+  <link rel="stylesheet" href="css/footer.css">
+
+  <link rel="preload" href="fonts/montserrat-v15-latin_cyrillic-ext_cyrillic-300.woff2" as="font" type="font/woff2" crossorigin>
+  <link rel="preload" href="fonts/montserrat-v15-latin_cyrillic-ext_cyrillic-regular.woff2" as="font" type="font/woff2" crossorigin>
+  <link rel="preload" href="fonts/montserrat-v15-latin_cyrillic-ext_cyrillic-500.woff2" as="font" type="font/woff2" crossorigin>
+  <link rel="preload" href="fonts/montserrat-v15-latin_cyrillic-ext_cyrillic-600.woff2" as="font" type="font/woff2" crossorigin>
+  <link rel="preload" href="fonts/montserrat-v15-latin_cyrillic-ext_cyrillic-700.woff2" as="font" type="font/woff2" crossorigin>
+  <link rel="preload" href="fonts/montserrat-v15-latin_cyrillic-ext_cyrillic-800.woff2" as="font" type="font/woff2" crossorigin>
+</head>
+<body>
+  <main>
+    <header>
+      <div class="container container_header">
+        <h1 class="visually-hidden">Евклид. Проектные системы</h1>
+
+        <img class="header__main-logo" src="image/header_logo.png" alt="Евклид. Проектные системы. Логотоип">
+
+        <button aria-label="Кнопка Меню" type="button" id="header_burger" class="header__burger">
+          <span></span>
+        </button>
+
+        <nav id="header__menu" class="header__menu">
+          <button type="button" id="header__menu__close-button" class="header__menu__close-button"></button>
+          <ul class="header__list">
+            <li class="header__item">
+              <a href="" class="header__link">О&nbsp;нас</a>
+            </li>
+
+            <li class="header__item">
+              <a href="" class="header__link">Проекты</a>
+            </li>
+
+            <li class="header__item">
+              <a href="" class="header__link">Этапы</a>
+            </li>
+
+            <li class="header__item">
+              <a href="" class="header__link">Отзывы</a>
+            </li>
+
+            <li class="header__item">
+              <a href="" class="header__link">Контакты</a>
+            </li>
+          </ul>
+        </nav>
+        <div class="header__search">
+          <button aria-label="Кнопка поиска" type="button" class="header__search-link"></button>
+        </div>
+      </div>
+    </header>
+
+    <section class="section-hero">
+      <div class="container container_section-hero">
+          <!-- Swiper code -->
+        <div class="swiper-container">
+          <!-- Additional required wrapper -->
+          <div class="swiper-wrapper">
+            <!-- Slides -->
+            <div class="swiper-slide">
+              <div class="section-hero__picture-1"></div>
+            </div>
+            <div class="swiper-slide">
+              <div class="section-hero__picture-2"></div>
+            </div>
+            <div class="swiper-slide">
+              <div class="section-hero__picture-3"></div>
+            </div>
+          </div>
+          <!-- If we need pagination -->
+          <div class="swiper-pagination"></div>
+
+          <!-- If we need navigation buttons -->
+          <!-- <div class="swiper-button-prev"></div>
+          <div class="swiper-button-next"></div> -->
+
+          <!-- If we need scrollbar -->
+          <!-- <div class="swiper-scrollbar"></div> -->
+        </div>
+
+        <div class="section-hero__content">
+          <h2 class="section__header_hero">Проектные решения любой сложности</h2>
+          <p class="section-hero__description">Есть над чем задуматься: базовые сценарии поведения пользователей и по сей день остаются уделом проектантов</p>
+          <a class="section-hero__link" href="">Заказать расчёт</a>
+        </div>
+      </div>
+    </section>
+
+    <section class="section-about-us">
+      <div class="container container_section-about-us">
+        <h2 class="section-header section-header_section-about-us">О нас</h2>
+        <div class="section-about-us__first-part">
+          <p class="section-about-us__text">Также как перспективное планирование создаёт необходимость включения в производственный план целого ряда внеочередных мероприятий с учётом комплекса экспериментов, поражающих по своей масштабности и грандиозности. А также диаграммы связей могут быть описаны максимально подробно. Мы вынуждены отталкиваться от того, что убеждённость некоторых оппонентов требует от нас анализа как самодостаточных, так и внешне зависимых концептуальных решений! Следует отметить, что высококачественный прототип <a class="section-about-us__info" href=""></a> будущего проекта предопределяет высокую востребованность позиций, занимаемых участниками в отношении поставленных задач. Мы вынуждены отталкиваться от того, что высококачественный прототип будущего проекта способствует повышению качества экспериментов.</p>
+        </div>
+
+        <div class="section-about-us__second-part">
+          <div class="section-about-us__main-picture">
+            <div class="section-about-us__main-picture-content">
+              <p class="section-about-us__main-picture-text">Принимая во внимание показатели успешности, перспективное планирование способствует подготовке и реализации новых принципов.</p>
+              <a class="section-about-us__main-picture-link" href="">Подробнее</a>
+            </div>
+          </div>
+
+          <div class="section-about-us__cards">
+            <div class="section-about-us__cards-item">
+              <div class="section-about-us__cards-item-content-lvl1">
+                <div class="section-about-us__cards-item-content-lvl2 section-about-us__package">
+                  <p class="section-about-us__cards-header">Консультация с широким активом</p>
+                  <p class="section-about-us__cards-text">А также свежий взгляд на привычные вещи - безусловно открывает новые горизонты для как самодостаточных, так и внешне зависимых концептуальных решений.</p>
+                </div>
+              </div>
+            </div>
+
+            <div class="section-about-us__cards-item">
+              <div class="section-about-us__cards-item-content-lvl1">
+                <div class="section-about-us__cards-item-content-lvl2 section-about-us__settings">
+                  <p class="section-about-us__cards-header">В своём стремлении повысить</p>
+                  <p class="section-about-us__cards-text">Качество жизни, они забывают, что сплочённость команды профессионалов представляет собой интересный эксперимент проверки прогресса профессионального сообщества. </p>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section class="section-how-we-work">
+      <div class="container container_section-how-we-work">
+        <h2 class="section-header section_header_section-how-we-work">Как мы работаем</h2>
+        <ul class="section-how-we-work__step-list">
+          <li class="section-how-we-work__step-list-item">
+            <button class="section-how-we-work__step-list-link section-how-we-work__step-list-link_active" type="button" data-path="one">1&nbsp;шаг</button>
+          </li>
+
+          <li class="section-how-we-work__step-list-item">
+            <button class="section-how-we-work__step-list-link" type="button" data-path="two">2&nbsp;шаг</button>
+          </li>
+
+          <li class="section-how-we-work__step-list-item">
+            <button class="section-how-we-work__step-list-link" type="button" data-path="three">3&nbsp;шаг</button>
+          </li>
+
+          <li class="section-how-we-work__step-list-item">
+            <button class="section-how-we-work__step-list-link" type="button" data-path="four">4&nbsp;шаг</button>
+          </li>
+        </ul>
+        <div class="section-how-we-work__consultation section-how-we-work__consultation_one tab-content-active" data-target="one">
+          <article class="section-how-we-work__consultation-block">
+            <h3 class="section-how-we-work__consultation-block-header">Проводим консультацию</h3>
+
+            <p class="section-how-we-work__consultation-block-text">Влечет за собой процесс внедрения и модернизации приоритизации разума над эмоциями. В рамках спецификации современных стандартов, некоторые особенности внутренней политики будут объективно рассмотрены соответствующими инстанциями. А также представители современных социальных резервов, инициированные исключительно синтетически, ограничены исключительно образом мышления. Являясь всего лишь частью общей картины, реплицированные с зарубежных источников, современные исследования подвергнуты целой серии независимых исследований. Кстати,  стремящиеся вытеснить традиционное производство, нанотехнологии освещают чрезвычайно интересные особенности картины в целом, однако конкретные выводы, разумеется, призваны к ответу.</p>
+
+            <div class="section-how-we-work__links-block">
+              <a class="section-how-we-work__details" href="">Подробнее</a>
+              <a class="section-how-we-work__contract" href="">Договор</a>
+            </div>
+          </article>
+        </div>
+
+        <div class="section-how-we-work__consultation section-how-we-work__consultation_two" data-target="two">
+          <article class="section-how-we-work__consultation-block">
+            <h3 class="section-how-we-work__consultation-block-header">Составляем смету</h3>
+
+            <p class="section-how-we-work__consultation-block-text">Внедрения и модернизации приоритизации разума над эмоциями. В рамках спецификации современных стандартов, некоторые особенности внутренней политики будут объективно рассмотрены соответствующими инстанциями. А также представители современных социальных резервов, инициированные исключительно синтетически, ограничены исключительно образом мышления. Являясь всего лишь частью общей картины, реплицированные с зарубежных источников, современные исследования подвергнуты целой серии независимых исследований.</p>
+          </article>
+        </div>
+
+        <div class="section-how-we-work__consultation section-how-we-work__consultation_three" data-target="three">
+          <article class="section-how-we-work__consultation-block">
+            <h3 class="section-how-we-work__consultation-block-header">Привлекаем подрядчиков</h3>
+
+            <p class="section-how-we-work__consultation-block-text">Идейные соображения высшего порядка, а также новая модель организационной деятельности требует анализа прогресса профессионального сообщества. Высокий уровень вовлечения представителей целевой аудитории является четким доказательством простого факта: высококачественный прототип будущего проекта напрямую зависит от дальнейших направлений развития. Разнообразный и богатый опыт говорит нам, что новая модель организационной деятельности говорит о возможностях системы массового участия. Принимая во внимание показатели успешности, постоянное информационно-пропагандистское обеспечение нашей деятельности позволяет выполнить важные задания по разработке прогресса профессионального сообщества.</p>
+          </article>
+        </div>
+
+        <div class="section-how-we-work__consultation section-how-we-work__consultation_four" data-target="four">
+          <article class="section-how-we-work__consultation-block">
+            <h3 class="section-how-we-work__consultation-block-header">Инспектируем все этапы работ</h3>
+
+            <p class="section-how-we-work__consultation-block-text">Высокий уровень вовлечения представителей целевой аудитории является четким доказательством простого факта: высококачественный прототип будущего проекта напрямую зависит от дальнейших направлений развития. Разнообразный и богатый опыт говорит нам, что новая модель организационной деятельности говорит о возможностях системы массового участия. Принимая во внимание показатели успешности, постоянное информационно-пропагандистское обеспечение нашей деятельности позволяет.</p>
+          </article>
+        </div>
+      </div>
+    </section>
+    <section class="section-faq">
+      <div class="container container_faq">
+        <h2 class="section-header section-header_section-faq">Часто задаваемые вопросы</h2>
+
+        <div id="accordion">
+          <h3>Из чего формируется конечная стоимость проекта?</h3>
+          <div>
+            <p>Являясь всего лишь частью общей картины, непосредственные участники технического прогресса призывают нас к новым свершениям, которые, в свою очередь, должны быть своевременно верифицированы. Но высококачественный прототип будущего проекта является качественно новой ступенью первоочередных требований. А ещё некоторые особенности внутренней политики, которые представляют собой яркий пример континентально-европейского типа политической культуры, будут объявлены нарушающими общечеловеческие нормы этики и морали. И нет сомнений, что явные признаки победы институционализации призывают нас к новым свершениям, которые, в свою очередь, должны быть указаны как претенденты на роль ключевых факторов.</p><br>
+            <p>Приятно, граждане, наблюдать, как некоторые особенности внутренней политики могут быть призваны к ответу. Явные признаки победы институционализации набирают популярность среди определенных слоев населения, а значит, должны быть объединены в целые кластеры себе подобных. Банальные, но неопровержимые выводы, а также многие известные личности призывают нас к новым свершениям, которые, в свою очередь, должны быть представлены в исключительно положительном свете.</p>
+          </div>
+          <h3>У меня есть свой проект. Сможем ли мы его доработать / реализовать?</h3>
+          <div>
+            <p>Далеко-далеко за словесными горами в стране гласных и согласных живут рыбные тексты. Букв взгляд, родного запятой, необходимыми напоивший языком силуэт выйти власти вопроса даже запятых коварный заголовок повстречался языкового последний ему, всеми раз до текстов назад путь приставка. Своих ему, грустный рыбными текстами свое его на берегу диких они меня путь, агентство наш?</p>
+          </div>
+          <h3>Я выбираю между разными компаниями. В чём ваше отличие?</h3>
+          <div>
+            <p>Далеко-далеко за словесными, горами в стране гласных и согласных живут рыбные тексты. Приставка, ты всемогущая взгляд последний от всех страну лучше. Вскоре путь правилами запятых необходимыми маленькая выйти его большой переписали они рот имеет скатился, текста, деревни все букв продолжил знаках послушавшись безорфографичный ему страну. Оксмокс, первую мир сбить рукопись маленькая то вершину!</p>
+          </div>
+          <h3>Могу ли я делегировать вам работу / согласование с подрядчиком / организацией?</h3>
+          <div>
+            <p>Далеко-далеко за словесными горами в стране гласных и согласных живут рыбные тексты. Строчка большого сих решила заманивший пустился реторический журчит приставка ее бросил! Великий даже курсивных, силуэт встретил, все точках пор вершину сих рукопись, то грамматики речью имени океана подпоясал продолжил себя.</p>
+          </div>
+          <h3>Могу ли я вернуть деньги на каком-либо из этапов работ?</h3>
+          <div>
+            <p>Далеко-далеко за словесными горами в стране гласных и согласных живут рыбные тексты. Безорфографичный букв коварный путь, парадигматическая великий инициал. Запятых предупреждал снова вскоре, речью текст буквоград страну по всей одна точках повстречался, продолжил до алфавит пустился, пор проектах?</p>
+          </div>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <footer class="footer">
+    <div class="container container_footer">
+      <div class="footer-left">
+        <img src="image/logo-footer.png" alt="" class="footer-left__logo-footer">
+        <nav class="footer-left__navigation">
+          <ul class="footer-left__list">
+            <li class="footer-left__list-item">
+              <a href="" class="footer-left__nav-link">О&nbsp;нас</a>
+            </li>
+            <li class="footer-left__list-item">
+              <a href="" class="footer-left__nav-link">Проекты</a>
+            </li>
+            <li class="footer-left__list-item">
+              <a href="" class="footer-left__nav-link">Отзывы</a>
+            </li>
+            <li class="footer-left__list-item">
+              <a href="" class="footer-left__nav-link">Договор&nbsp;оферты</a>
+            </li>
+            <li class="footer-left__list-item">
+              <a href="" class="footer-left__nav-link">Договор&nbsp;подряда</a>
+            </li>
+            <li class="footer-left__list-item">
+              <a href="" class="footer-left__nav-link">Конфиденциальность</a>
+            </li>
+            <li class="footer-left__list-item">
+              <a href="" class="footer-left__nav-link">Партнёрское&nbsp;соглашение</a>
+            </li>
+          </ul>
+        </nav>
+
+        <ul aria-label="Список социальных сетей" class="footer-left__social-list">
+          <li class="footer-left__social-item">
+            <a href="" aria-label="Ссылка на наш Facebook" class="footer-left__social-link footer-left__social-link_facebook"></a>
+          </li>
+          <li class="footer-left__social-item">
+            <a href="" aria-label="Ссылка на наш Vkontakte" class="footer-left__social-link footer-left__social-link_vk"></a>
+          </li>
+          <li class="footer-left__social-item">
+            <a href="" aria-label="Ссылка на наш Instagram" class="footer-left__social-link footer-left__social-link_instagram"></a>
+          </li>
+        </ul>
+      </div>
+      <div class="footer-middle">
+        <h2 class="section-header section-header_footer-middle">Оставить заявку</h2>
+
+        <form action="https://jsonplaceholder.typicode.com/posts" autocomplete="on" method="POST" target="_blank" class="footer-middle__write-to-us">
+          <input required type="text" name="name" placeholder="Фамилия, имя и отчество*" class="footer-middle__write-to-us-input" id="name">
+
+          <input required type="email" name="email" placeholder="E-mail*" class="footer-middle__write-to-us-input">
+
+          <textarea name="message" placeholder="Сообщение" class="footer-middle__write-to-us-input footer-middle__write-to-us-input_textarea"></textarea>
+          <div class="footer-middle__submit">
+            <button type="submit" class="footer-middle__write-to-us-btn-submit">Отправить данные</button>
+            <div>
+              <input type="checkbox" id="footer-middle__checkbox" class="footer-middle__privacy-checkbox" name="privacy" required>
+              <label for="footer-middle__checkbox" class="footer-middle__privacy-check">Согласен на обработку данных</label>
+            </div>
+          </div>
+        </form>
+      </div>
+      <div class="footer-right">
+        <p class="footer-right__text">Высокий уровень вовлечения представителей целевой аудитории является четким доказательством простого факта: разбавленное изрядной долей эмпатии, рациональное мышление позволяет оценить значение модели развития. Таким образом, консультация с широким активом обеспечивает широкому кругу (специалистов) участие в формировании стандартных подходов. </p>
+      </div>
+    </div>
+  </footer>
+
+  <script src="js/burger.js"></script>
+  <script src="js/swiper.js"></script>
+  <script src="js/tabs.js"></script>
+</body>
+</html>

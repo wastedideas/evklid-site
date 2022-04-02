@@ -1,11 +1,11 @@
 /* Hero */
 
 .section-hero {
+  height: 670px;
   padding-bottom: 50px;
 }
 
 .container_section-hero {
-  height: 620px;
   display: flex;
   position: relative;
 }
@@ -102,11 +102,8 @@
 
 @media (max-width: 1140px) {
   .section-hero {
-    padding-bottom: 29px;
-  }
-
-  .container_section-hero {
     min-height: 668px;
+    padding-bottom: 29px;
   }
 
   .section-hero__content {
@@ -183,12 +180,15 @@
 
 @media (max-width: 450px) {
   .section-hero {
+    min-height: 262px;
+    max-height: 262px;
     padding-bottom: 19.5px;
   }
 
   .container_section-hero {
     min-height: 262px;
     max-height: 262px;
+    max-width: 100%;
   }
 
   .swiper-container {
@@ -202,7 +202,6 @@
   .section-hero__content {
     padding: 32px 21px 0 22px;
     margin-bottom: 0;
-    position: relative;
   }
 
   .section__header_hero {

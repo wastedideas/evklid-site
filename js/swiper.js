@@ -3,6 +3,8 @@ const swiper = new Swiper('.swiper-container', {
   direction: 'horizontal',
   loop: true,
   effect: 'fade',
+  mousewheel: true,
+  ForceToAxis: true,
 
   // If we need pagination
   pagination: {

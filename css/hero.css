@@ -1,7 +1,7 @@
 /* Hero */
 
 .section-hero {
-  height: 670px;
+  height: 770px;
   padding-bottom: 50px;
 }
 
@@ -189,10 +189,6 @@
     min-height: 262px;
     max-height: 262px;
     max-width: 100%;
-  }
-
-  .swiper-container {
-    position: absolute;
   }
 
   .swiper-pagination {

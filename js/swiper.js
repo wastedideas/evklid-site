@@ -1,11 +1,8 @@
 const swiper = new Swiper('.swiper-container', {
   direction: 'horizontal',
-  loop: true,
   effect: 'fade',
   mousewheel: true,
-  ForceToAxis: true,
   observeSlideChildren: true,
-
   pagination: {
     el: '.swiper-pagination',
     type: 'bullets',
@@ -15,5 +12,23 @@ const swiper = new Swiper('.swiper-container', {
   keyboard: {
     enabled: true,
     onlyInViewport: true,
+  },
+
+  on: {
+    slideChange: function() {
+      setTimeout(function () {
+          swiper.params.mousewheel.releaseOnEdges = false;
+      }, 500);
+    },
+    reachBeginning: function() {
+      setTimeout(function () {
+          swiper.params.mousewheel.releaseOnEdges = true;
+      }, 650);
+    },
+    reachEnd: function() {
+      setTimeout(function () {
+          swiper.params.mousewheel.releaseOnEdges = true;
+      }, 650);
+    }
   }
 });
